@@ -24,14 +24,19 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Checkボタンの状態の確認
+                //Checkが入っていないなら
                 if(checkBox.isChecked()==false)
                 {
                     checkBox.setChecked(true);
-                }else{
+                }else{//チェックが入っていたら
                 checkBox.setChecked(false);
                 }
+                //EditBoxの取得
                 String text = editText.getText().toString();
+                //textViewへの反映
                 textView.setText(text);
+                //EditBoxが空だった場合
                 if(text.length()==0)
                 {
                     textView.setText("エラー");
