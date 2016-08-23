@@ -17,11 +17,13 @@
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/edittext"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="13"/>
         <Button
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="追加"/>
@@ -34,14 +36,14 @@
         android:paddingTop="48dp"
         android:orientation="vertical">
         <CheckBox
+            android:id="@+id/checkbox1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/checkbox1"
             android:text="チェックボックス１"/>
         <CheckBox
+            android:id="@+id/checkbox2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/checkbox2"
             android:text="チェックボックス２"/>
 
         <RelativeLayout
@@ -56,6 +58,7 @@
                 android:src="@mipmap/ic_launcher"/>
 
             <TextView
+                android:id="@+id/textview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/image_view"
