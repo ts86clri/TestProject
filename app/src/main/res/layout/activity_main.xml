@@ -37,20 +37,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/checkbox1"
-            android:text="チェックボックス１"
-        />
+            android:text="チェックボックス１"/>
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/checkbox2"
-            android:text="チェックボックス２"
-        />
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/checkbox3"
-            android:text="チェックボックス３"
-        />
+            android:text="チェックボックス２"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
