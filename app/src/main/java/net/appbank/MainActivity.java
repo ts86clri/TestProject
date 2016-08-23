@@ -20,11 +20,12 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button button = (Button)findViewById(R.id.button);
+        Button button1 = (Button)findViewById(R.id.button1);
         final TextView textView = (TextView)findViewById(R.id.textview);
         final EditText editText = (EditText)findViewById(R.id.edittext);
         final CheckBox checkBox = (CheckBox)findViewById(R.id.checkbox1);
         button.setText("しゃべる");
-
+        button1.setText("移動");
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,8 +40,14 @@ public class MainActivity extends AppCompatActivity{
                 }
                 //textViewへの反映
                 textView.setText(text);
-                final Intent intent = new Intent(MainActivity.this, SubActivity.class);
-                startActivity(intent);
+            }
+        });
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            final Intent intent = new Intent(MainActivity.this, SubActivity.class);
+            startActivity(intent);
+
             }
         });
     }
